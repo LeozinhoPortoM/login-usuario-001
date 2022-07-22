@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(cookieParser());
+// ! NUNCA MANDAR O SECRET PARA O GITHUB
 app.use(session({
   secret: "senha",
   resave: true,
